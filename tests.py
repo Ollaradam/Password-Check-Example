@@ -13,6 +13,8 @@ class TestCase(unittest.TestCase):
     def test3(self):
         self.assertFalse(check_pwd('thispwdisbad'))
 
+    def test4(self):
+        self.assertFalse(check_pwd('THISPWDALSOBAD'))
 
 if __name__ == '__main__':
     unittest.main()
