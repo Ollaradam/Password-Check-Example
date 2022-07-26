@@ -22,6 +22,9 @@ class TestCase(unittest.TestCase):
     def test6(self):
         self.assertFalse(check_pwd('AlmostRight23'))
 
+    def test7(self):
+        self.assertTrue('ThisShouldWork23!')
+
 
 if __name__ == '__main__':
     unittest.main()
