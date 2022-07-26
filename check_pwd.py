@@ -8,4 +8,6 @@ def check_pwd(pwd):
         return False
     if not any(char.isdigit() for char in pwd):
         return False
+    if not any(char in symbols for char in pwd):
+        return False
     return True
