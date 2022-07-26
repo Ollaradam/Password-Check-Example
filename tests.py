@@ -10,6 +10,9 @@ class TestCase(unittest.TestCase):
     def test2(self):
         self.assertFalse(check_pwd('antidisestablishmentarianism'))
 
+    def test3(self):
+        self.assertFalse(check_pwd('thispwdisbad'))
+
 
 if __name__ == '__main__':
     unittest.main()
