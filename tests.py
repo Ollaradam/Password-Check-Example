@@ -16,5 +16,8 @@ class TestCase(unittest.TestCase):
     def test4(self):
         self.assertFalse(check_pwd('THISPWDALSOBAD'))
 
+    def test5(self):
+        self.assertFalse(check_pwd('StillNotGood'))
+
 if __name__ == '__main__':
     unittest.main()
