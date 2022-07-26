@@ -6,4 +6,6 @@ def check_pwd(pwd):
         return False
     if not any(char.islower() for char in pwd):
         return False
+    if not any(char.isdigit() for char in pwd):
+        return False
     return True
